@@ -23,7 +23,7 @@ public class MachineController {
     }
 
     @GetMapping("/{idMachine}")
-    public Optional<Machine> getMachine (@PathVariable("id") int id) {
+    public Optional<Machine> getMachine (@PathVariable("idMachine") int id) {
 
         return machineService.getMachine(id);
     }

@@ -14,10 +14,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+
+@Service
 /**
  * Esta clase es el servicio de Reservation
  */
-@Service
 public class ReservationService {
     @Autowired
     private ReservationRepository reservationRepository;
@@ -133,6 +134,10 @@ public class ReservationService {
         }
     }
 
+    /**
+     * Esta clase obtiene los clientes
+     * @return
+     */
     public List<CounterClients> getTopClients(){
         return reservationRepository.getTopClients();
     }
